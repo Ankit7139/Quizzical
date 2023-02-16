@@ -139,3 +139,9 @@ p {
 h1 {
   font-size: 50px;
 }
+
+.quiz--footer {
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+}

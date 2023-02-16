@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Question } from "./Question";
 import PlayAgain from "./PlayAgain";
-import Confetti from "react-confetti";
+import { ConfettiDrop } from "./ConfettiDrop";
 
 export const Quiz = (props) => {
   const [checkAnswers, setCheckAnswers] = useState(false);
@@ -28,14 +28,25 @@ export const Quiz = (props) => {
 
   return (
     <div className="quiz">
-      {checkAnswers && <Confetti />}
+      {checkAnswers && <ConfettiDrop />}
       {questions}
       {checkAnswers ? (
         <PlayAgain newGame={props.newGame} newQues={props.newQues} />
       ) : (
-        <button className="check--answers" onClick={handleClick}>
-          Check Answers
-        </button>
+        <div className="quiz--footer">
+          <button
+            className="check--answers"
+            onClick={() => {
+              props.newGame();
+              props.newQues();
+            }}
+          >
+            Start Over
+          </button>
+          <button className="check--answers" onClick={handleClick}>
+            Check Answers
+          </button>
+        </div>
       )}
     </div>
   );
