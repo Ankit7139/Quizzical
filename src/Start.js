@@ -6,7 +6,6 @@ export const Start = (props) => {
 
   // const counter = useSelector((state) => state.counter.counter);
   // const category = useSelector((state) => state.category);
-
   // const difficulty = useSelector((state) => state.difficulty);
   // const type = useSelector((state) => state.type);
 
