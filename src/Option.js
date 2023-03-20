@@ -2,7 +2,7 @@ import React from "react";
 
 export const Option = (props) => {
   const styles1 = {
-    backgroundColor: props.isClicked ? "#D6DBF5" : "#F5F7FB",
+    backgroundColor: props.isClicked ? "#4ec2ed" : "#F5F7FB",
   };
 
   const styles2 = {

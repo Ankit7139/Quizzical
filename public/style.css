@@ -3,12 +3,22 @@
 }
 
 * {
-  font-family: cursive;
+  /* font-family: cursive; */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Comic Neue", cursive; */
+  /* font-family: "Mukta", sans-serif; */
 }
 
 body {
-  background-image: url("https://as2.ftcdn.net/v2/jpg/03/09/44/57/1000_F_309445752_htXY7HAUYQsx8mD8zhmHgdtgaxyUUSx2.jpg");
-  background-size: cover;
+  /* background-image: url("https://as2.ftcdn.net/v2/jpg/03/09/44/57/1000_F_309445752_htXY7HAUYQsx8mD8zhmHgdtgaxyUUSx2.jpg");
+  background-size: cover; */
+  background: rgb(2, 12, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 12, 16, 1) 14%,
+    rgba(6, 79, 199, 0.9507405257024685) 79%
+  );
   zoom: 90%;
   margin: 0;
   padding: 0;
@@ -16,8 +26,14 @@ body {
 
 .container {
   /* border: 1px solid black; */
-  background-image: url("https://img.freepik.com/premium-vector/quiz-vector-pop-style-illustration-with-megaphone-yellow-background_194782-902.jpg?w=2000");
-
+  /* background-image: url("https://img.freepik.com/premium-vector/quiz-vector-pop-style-illustration-with-megaphone-yellow-background_194782-902.jpg?w=2000"); */
+  /* background-color: #ffdd00; */
+  background: rgb(183, 248, 110);
+  background: linear-gradient(
+    90deg,
+    rgba(183, 248, 110, 1) 23%,
+    rgba(243, 235, 79, 1) 79%
+  );
   width: 550px;
   min-height: 750px;
   display: flex;
@@ -71,15 +87,16 @@ body {
   width: fit-content;
   height: fit-content;
   border: 1px solid black;
-  padding: 5px;
+  padding: 8px;
   margin: 2px;
   min-width: 60px;
   min-height: 10px;
+  font-weight: bold;
 }
 
 .question--text {
   color: #293264;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .quiz {
@@ -96,7 +113,7 @@ body {
   padding: 5px;
   border: none;
   width: 150px;
-  height: fit-content;
+  height: 35px;
   margin-bottom: 5px;
 }
 
@@ -116,11 +133,12 @@ body {
   width: 250px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 select {
   background: #4d5b9e;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100px;
   height: 30px;
   color: white;

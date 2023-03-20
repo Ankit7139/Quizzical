@@ -14,8 +14,8 @@ export default function PlayAgain(props) {
       <h4 className="answers--count">
         You Scored {correctAnswers}/5 correct answers <br />
         {correctAnswers > 2
-          ? "More than 60% Confetti drop for You ! ! !"
-          : "Less than 60% You can try again"}
+          ? "You Got More than 60% , Well Done!"
+          : "You Got Less than 60% , Try Again"}
       </h4>
       <button
         className="check--answers"

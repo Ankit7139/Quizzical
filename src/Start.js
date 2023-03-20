@@ -32,13 +32,13 @@ export const Start = (props) => {
     <div className="start">
       <div style={{ width: "200px", backgroundColor: "black" }}></div>
       <h1>Quizzical</h1>
-      <p>
+      {/* <p>
         Quizzical, is a web based multiple-choice-question system which is
         interactive and fun.
-        {/* <br />
+        <br />
         Select a Category,Difficulty and Type to get Started or just press start
-        quiz to get random questions. */}
-      </p>
+        quiz to get random questions.
+      </p> */}
       <button className="start--button" onClick={props.onClick}>
         Start Quiz
       </button>
